@@ -1,7 +1,7 @@
 State-wise statistics for new companies on India map
 ========================================================
 author: Urvesh Devani 
-date: 10/25/2015
+date: 10/26/2015
 width: 1440
 height: 1050
 
