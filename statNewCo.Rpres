@@ -1,0 +1,46 @@
+State-wise statistics for new companies on India map
+========================================================
+author: Urvesh Devani 
+date: 10/25/2015
+width: 1440
+height: 900
+
+Goal
+========================================================
+- Explore Indian States for newly registered companies 2013-2014, on the map
+- The base data for such maps, the "polygons" that define the country, the states, the districts and even the talukas ( or sub-divisions) is available from an organisation called Global Administrative Areas or gadm.org
+- Here, India level 1 polygon data is downloaded 
+- Statistics data is downloaded from 
+
+https://data.gov.in/catalog/registration-new-companies-region-state-wise-distribution 
+
+- Various parameters include Public, private companies and respective authorized capital amount 
+
+Let us explore the data
+========================================================
+
+```{r}
+NRCdata <- read.csv("data/NRC.csv")
+totalRows <- grep("total", NRCdata$State, ignore.case = TRUE)
+NRCdata <- NRCdata[-totalRows,]
+NRCdata <- NRCdata[order(NRCdata$State), ]
+head(NRCdata)
+```
+
+List of states for which info is available
+========================================================
+
+```{r, echo=FALSE}
+NRCdata$State
+```
+
+Thank you & links
+========================================================
+
+Documentation : Documenation for usage is available on app
+
+App: 
+
+Github Repo:
+
+Slidify Presentation:
