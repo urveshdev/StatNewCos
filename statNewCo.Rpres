@@ -3,7 +3,7 @@ State-wise statistics for new companies on India map
 author: Urvesh Devani 
 date: 10/25/2015
 width: 1440
-height: 900
+height: 1050
 
 Goal
 ========================================================
@@ -39,8 +39,6 @@ Thank you & links
 
 Documentation : Documenation for usage is available on app
 
-App: 
+App: https://urveshdevani.shinyapps.io/statsNewCompany
 
-Github Repo:
-
-Slidify Presentation:
+Github Repo: https://github.com/urveshdev/StatNewCos 
